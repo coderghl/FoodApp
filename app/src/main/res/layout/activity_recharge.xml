@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".activity.RechargeActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/title_bg"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+      android:id="@+id/recharge_back"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:src="@mipmap/back" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="35dp"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="账户管理"
+      android:textColor="@android:color/white"
+      android:textSize="20sp" />
+
+    <TextView
+      android:id="@+id/recharge_history"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="充值记录"
+      android:textColor="@android:color/white"
+      android:textSize="16sp" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="充值账户："
+      android:textColor="@android:color/black"
+      android:textSize="30sp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/recharge_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/black"
+      android:textSize="28sp"
+      android:textStyle="bold" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="充值金额："
+      android:textColor="@android:color/black"
+      android:textSize="30sp"
+      android:textStyle="bold" />
+
+    <EditText
+      android:id="@+id/recharge_inp"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:inputType="number"
+      android:maxLength="4"
+      android:maxLines="1"
+      android:textColor="@android:color/black"
+      android:textSize="24sp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:text="元"
+      android:textColor="@android:color/black"
+      android:textSize="28sp"
+      android:textStyle="bold" />
+  </LinearLayout>
+
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <Button
+      android:id="@+id/recharge_up"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="充值" />
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:text="取消" />
+  </RelativeLayout>
+
+</LinearLayout>

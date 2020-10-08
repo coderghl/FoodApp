@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="15dp">
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/food_list_icon_content"
+    android:layout_width="140dp"
+    android:layout_height="110dp"
+    android:layout_marginRight="20dp"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <ImageView
+      android:id="@+id/food_list_icon"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="fitXY" />
+  </androidx.cardview.widget.CardView>
+
+  <TextView
+    android:id="@+id/food_list_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/food_list_icon_content"
+    android:ellipsize="end"
+    android:maxEms="16"
+    android:singleLine="true"
+    android:textColor="@android:color/black"
+    android:textSize="22sp" />
+
+  <TextView
+    android:id="@+id/food_list_price"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/food_list_title"
+    android:layout_marginTop="10dp"
+    android:layout_toRightOf="@+id/food_list_icon_content"
+    android:ellipsize="end"
+    android:maxEms="16"
+    android:singleLine="true"
+    android:textColor="@android:color/black"
+    android:textSize="20sp" />
+
+  <TextView
+    android:id="@+id/food_list_mark"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/food_list_price"
+    android:layout_marginTop="10dp"
+    android:layout_toRightOf="@+id/food_list_icon_content"
+    android:ellipsize="end"
+    android:maxEms="16"
+    android:singleLine="true"
+    android:textColor="@android:color/black"
+    android:textSize="18sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/food_list_icon_content"
+    android:layout_marginTop="5dp"
+    android:background="#ccc" />
+</RelativeLayout>

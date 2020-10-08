@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".fragment.FoodFragment">
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/title_bg"
+    android:gravity="center"
+    android:text="餐厅菜单"
+    android:textColor="@android:color/white"
+    android:textSize="20sp" />
+
+  <com.google.android.material.tabs.TabLayout
+    android:id="@+id/tab_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary" />
+
+  <androidx.viewpager.widget.ViewPager
+    android:id="@+id/view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>
